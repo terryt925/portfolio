@@ -9,6 +9,15 @@
 	var	$window = $(window),
 		$body = $('body');
 
+	your_email = "thindterry@yahoo.com";
+	emailSub = "personal site";
+	emailBody = document.getElementById("message").innerText; 
+	var email_btn = document.getElementById('send');
+	email_btn.addEventListener("click",function(e){
+		e.preventDefault();
+		location.href = "mailto:"+your_email+'&subject='+emailSub+'&body='+emailBody;
+	});
+
 	// Breakpoints.
 		breakpoints({
 			wide:      [ '1281px',  '1680px' ],
@@ -27,3 +36,4 @@
 		});
 
 })(jQuery);
+

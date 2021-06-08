@@ -20,7 +20,7 @@
 				<!-- <p>A responsive HTML5 + CSS3 site template designed by <a href="http://html5up.net">HTML5 UP</a> -->
 				<p></p>
 				<br />
-				and released for free under the <a href="http://html5up.net/license">Creative Commons license</a>.</p>
+				<!-- and released for free under the <a href="http://html5up.net/license">Creative Commons license</a>.</p> -->
 			</div>
 
 		<!-- Main -->
@@ -223,20 +223,20 @@
 
 					<p>Please leave a message below with your name and contact info and I will get back to you as soon as I can. </p>
 
-					<form method="post" action="mailto:terrykthind@gmail.com" >
+					<form method="post" target="_top" >
 						<div class="row">
 							<div class="col-6 col-12-mobilep">
-								<input type="text" name="name" placeholder="Name" autocomplete="off"/>
+								<input type="text" name="name" id="name" placeholder="Name" autocomplete="off"/>
 							</div>
 							<div class="col-6 col-12-mobilep">
-								<input type="email" name="email" placeholder="Email" autocomplete="off"/>
+								<input type="email" name="email" id="email" placeholder="Email" autocomplete="off"/>
 							</div>
 							<div class="col-12">
-								<textarea name="message" placeholder="Message" rows="6" autocomplete="off"></textarea>
+								<textarea name="message" id="message" placeholder="Message" rows="6" autocomplete="off"></textarea>
 							</div>
 							<div class="col-12">
 								<ul class="actions special">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" id="send" value="Send Message" /></li>
 								</ul>
 							</div>
 						</div>
